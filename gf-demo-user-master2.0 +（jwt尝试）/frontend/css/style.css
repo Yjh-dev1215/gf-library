@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.link {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link-divider {
+    margin: 0 10px;
+    color: #999;
+}
+
+.error-message {
+    color: #f44336;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.success-message {
+    color: #4CAF50;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* 验证码相关样式 */
+.input-group {
+    display: flex;
+    position: relative;
+}
+
+.input-group input {
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+}
+
+.btn-send-code {
+    width: auto;
+    margin-left: -1px;
+    border-radius: 0 4px 4px 0;
+    background-color: #2196F3;
+    font-size: 14px;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.btn-send-code:hover {
+    background-color: #0b7dda;
+}
+
+.btn-send-code:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}

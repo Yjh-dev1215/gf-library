@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>用户注册</h1>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="passport">用户名</label>
+                <input type="text" id="passport" name="passport" required>
+                <small id="passportError" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="nickname">昵称</label>
+                <input type="text" id="nickname" name="nickname" required>
+                <small id="nicknameError" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">邮箱</label>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <button type="button" id="sendCodeBtn" class="btn-send-code">发送验证码</button>
+                </div>
+                <small id="emailError" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="code">验证码</label>
+                <input type="text" id="code" name="code" required>
+                <small id="codeError" class="error-message"></small>
+            </div>
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">确认密码</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <small id="passwordError" class="error-message"></small>
+            </div>
+            <button type="submit">注册</button>
+            <div id="errorMessage" class="error-message"></div>
+            <div id="successMessage" class="success-message"></div>
+            <a href="index.html" class="link">已有账号？立即登录</a>
+        </form>
+    </div>
+    
+    <script src="js/api.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

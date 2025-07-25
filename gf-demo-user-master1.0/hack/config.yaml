@@ -1,0 +1,10 @@
+# GoFrame CLI tool configuration.
+gfcli:
+  gen:
+    dao:
+      - link: "mysql:root:Yjh201004030080@tcp(127.0.0.1:3306)/library_system" 
+        tables: "user,users,books,borrow_records"
+        removePrefix: "gf_"
+        descriptionTag: true
+        noModelComment: true
+  

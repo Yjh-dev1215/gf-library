@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>用户登录</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="identifier">用户名/邮箱</label>
+                <input type="text" id="identifier" name="identifier" required>
+            </div>
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">登录</button>
+            <div id="errorMessage" class="error-message"></div>
+            <div class="links-container">
+                <a href="register.html" class="link">没有账号？立即注册</a>
+                <span class="link-divider">|</span>
+                <a href="reset-password.html" class="link">忘记密码？找回</a>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
